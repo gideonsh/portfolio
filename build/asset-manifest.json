@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b99613c7.css",
+    "main.js": "/static/js/main.6885084f.js",
+    "static/media/checkers.jpg": "/static/media/checkers.3b8e60e80a92faa3b272.jpg",
+    "static/media/Sadna.jpg": "/static/media/Sadna.0f9c1f6ea5beb762d229.jpg",
+    "static/media/Gideon_Shachar_CV.pdf": "/static/media/Gideon_Shachar_CV.b0e0314456211125ea1a.pdf",
+    "static/media/API_banking.png": "/static/media/API_banking.1c2be75a4139b84d6b36.png",
+    "static/media/mine_sweeper2.jpg": "/static/media/mine_sweeper2.2a8be65cc5700b973cbe.jpg",
+    "static/media/memory-game3.jpg": "/static/media/memory-game3.380958455cb912e18db8.jpg",
+    "static/media/Coffee.jpg": "/static/media/Coffee.e6098826faee170d2856.jpg",
+    "index.html": "/index.html",
+    "main.b99613c7.css.map": "/static/css/main.b99613c7.css.map",
+    "main.6885084f.js.map": "/static/js/main.6885084f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b99613c7.css",
+    "static/js/main.6885084f.js"
+  ]
+}

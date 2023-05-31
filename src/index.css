@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("http://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+@layer base {
+  body {
+    @apply font-[Raleway];
+  }
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+  .li-navbar {
+    @apply w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300;
+  }
+  .a-navbar {
+    @apply flex justify-between items-center w-full;
+  }
+  .home-container {
+    @apply max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full;
+  }
+  .grid-item {
+    @apply shadow-lg shadow-[#4c64ee] container rounded-md flex justify-center items-center mx-auto;
+  }
+  .navbar-div {
+    @apply fixed w-full h-[80px] flex justify-between items-center px-4;
+  }
+  .grid-outer {
+    @apply shadow-lg shadow-[#040c16] container rounded-md flex justify-center items-center mx-auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* hide element on small screens */
+  .on-screen {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 2048px) {
+  /* show element on medium-sized screens */
+  .content-div:hover {
+    background-image: linear-gradient(
+      to right,
+      rgb(48, 65, 102),
+      hsla(242, 74%, 61%)
+    ) !important;
+  }
+
+  .on-mobile {
+    display: none;
+  }
+}
+
+.navbar-div-color {
+  background-image: linear-gradient(
+    to right,
+    rgba(112, 157, 255, 0.5),
+    hsla(242, 74%, 61%)
+  ) !important;
+}
+
+.home-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+    to right,
+    rgba(48, 65, 102, 0.5),
+    hsla(242, 74%, 61%)
+  ) !important;
+}
+
+.about-div {
+}
+
+.skills-div {
+  background-image: linear-gradient(
+    to right,
+    rgba(48, 65, 102, 0.5),
+    hsla(242, 74%, 61%)
+  ) !important;
+}
+
+.work-div {
+  background-image: linear-gradient(
+    to right,
+    rgba(48, 65, 102, 0.5),
+    hsla(242, 74%, 61%)
+  ) !important;
+}
+
+.footer-div {
+  background-image: linear-gradient(
+    to right,
+    rgba(48, 65, 102, 0.5),
+    hsla(242, 74%, 61%)
+  ) !important;
+}
+
+.content-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.view-work:hover {
+  background-image: linear-gradient(
+    to right,
+    rgba(112, 157, 255, 0.8),
+    hsla(242, 74%, 61%, 0.8)
+  ) !important;
+}
+
+.my-name {
+  text-decoration: linear-gradient(
+    to right,
+    rgba(112, 157, 255, 0.8),
+    hsla(242, 74%, 61%, 0.8)
+  ) !important;
+}
+
+.footer-icon {
+  position: relatice;
+  cursor: pointer;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+}
+
+.modal {
+  z-index: 100;
+  position: fixed;
+  top: 22vh;
+  left: 10%;
+  width: 80%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 8px;
+}
+
+.modal__header {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  background: #2a006e;
+  color: white;
+}
+
+.modal__header h2 {
+  margin: 0.5rem;
+}
+
+.modal__content {
+  padding: 1rem 0.5rem;
+}
+
+.modal__footer {
+  padding: 1rem 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    left: calc(50% - 20rem);
+    width: 40rem;
+  }
+}
+
+.modal-enter {
+  transform: translateY(-10rem);
+  opacity: 0;
+}
+
+.modal-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 200ms;
+}
+
+.modal-exit {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.modal-exit-active {
+  transform: translateY(-10rem);
+  opacity: 0;
+  transition: all 200ms;
+}
